@@ -1,0 +1,950 @@
+@import url("font.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+/*----------------------HEADER----------------------*/
+.header {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(239, 245, 251, 1);
+}
+
+.header__container {
+    margin: 20px 120px;
+    display: flex;
+    align-items: center;
+}
+
+/*.header__logo {
+}*/
+
+.header__menu {
+    margin-left: 51px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: var(--text-primary, #333);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114%;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.m1 {
+    padding-left: 8px;
+}
+
+.menu__item {
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--text-primary, #333);
+}
+.menu__item:hover{
+    background-color: #03B2A5;
+    color: white;
+}
+
+.header__btn {
+    display: flex;
+    margin-left: 164px;
+    padding: 14px 20px;
+    align-items: center;
+    border-radius: 4px;
+    border-color: transparent;
+    background: #E3F5F5;
+    color: var(--main-03-b-2-a-5, #03B2A5);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.pick-up:hover{
+    background: var(--main-03-b-2-a-5, #03B2A5);
+    color: #E3F5F5;
+}
+
+#burger, [for=burger]{
+    display: none;
+}
+/*----------------------MAIN----------------------*/
+
+/*.main {
+    display: flex;
+    margin: auto;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+.main__container {
+    margin: 16px 120px;
+    padding: 0;
+    max-width: 1440px;
+    display: block;
+}
+
+.main__menu {
+    list-style: none;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu__bar {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.70); 
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.25px;
+    text-decoration: none;
+}
+.menu__bar:hover{
+    background-color: #03B2A5;
+    color: white;
+}
+
+.heading__name {
+    margin-top: 14px;
+    max-width: 552px;
+}
+
+.name__blog {
+    color: var(--text-primary, #333);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; 
+}
+
+
+.filter__teg {
+    display: inline-flex;
+    margin-top: 32px;
+    gap: 8px;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.teg__btn {
+    display: flex;
+    padding: 6px 8px;
+    gap: 4px;
+    height: 32px;
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    background-color: #fff;
+    white-space: nowrap;
+}
+.teg__btn:active,
+.teg__btn:focus {
+    border: 2px solid #16C8BB;
+}
+
+
+.blog__one{
+    display: flex;
+    margin-top: 23px;
+    gap: 24px;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.blog__style_one{
+    display: inline-block;
+    text-decoration: none;
+    width: 588px;
+    height: 480px;
+    margin-bottom: 23px;
+}
+.photo__options{
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.photo__emotional_burnout{
+    background: url("../images/block/block1-img1.png") lightgray -6.89px -169px / 104.196% 169.177% no-repeat;
+    width: 588px;
+    height: 260px;
+}
+.photo__anxiety_fears{
+    background: url("../images/block/block1-img2.png") lightgray -1px -50px / 100% 130% no-repeat;
+    width: 588px;
+    height: 260px;
+}
+.teg__blog{
+    display: inline-flex;
+    padding: 6px 8px;
+    margin-top: 8px;
+    margin-left: 8px;
+    align-items: flex-start;
+    gap: 4px;
+    border-radius: 24px;
+    border: 1px solid #C1C5CD;
+    background: rgba(255, 255, 255, 0.70);
+    color: #333;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    width: fit-content;
+}
+
+.blog__options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid rgb(222, 222, 222);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding-block: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.blog__options:hover{
+    background-color: #03B2A5;
+    color: var(--text-primary, #ffffff);
+}
+.blog__container_one{
+    width: 588px;
+    height: 240px;
+}
+.blog__title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-right: 15px;
+    color: var(--text-primary, #333);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    align-self: stretch;
+}
+.blog__author{
+    margin-top: 4px;
+    color: #494949;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+.blog__description{
+    margin-top: 8px;
+    flex: 1 1 auto;
+    color: var(--text-primary, #333);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    align-self: stretch;
+}
+.blog__date{
+    color: #868686;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+}
+
+
+.blog__two{
+    display: flex;
+    gap: 24px;
+    margin-top: 23px;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.blog__style_two{
+    display: inline-block;
+    text-decoration: none;
+    width: 384px;
+    height: 476px;
+}
+.blog__container_two{
+    width: 384px;
+    height: 216px;
+}
+.photo__emotional_burnout_two{
+    background: url("../images/block/block2-img1.png") lightgray -1px -15px / 100% 130% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+.photo__anxiety_fears_two{
+    background: url("../images/block/block2-img2.png") lightgray -1px -15px / 100% 120% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+.managing__emotions{
+    background: url("../images/block/block2-img3.png") lightgray -1px -15px / 100% 110% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+.photo__emotional_burnout_three{
+    background: url("../images/block/block3-img1.jpeg") lightgray -1px -10px / 100% 110% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+.photo__anxiety_fears_three{
+    background: url("../images/block/block3-img2.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+.managing__emotions_two{
+    background: url("../images/block/block3-img3.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+    width: 384px;
+    height: 260px;
+}
+
+
+.btn__container{
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    margin-bottom: 96px;
+}
+.main__btn{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 182px;
+    height: 48px;
+    left: 43.68%;
+    right: 43.68%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background: rgb(53, 179, 169);
+    cursor: pointer;
+}
+.main__btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(53, 179, 169);
+    border: 2px solid rgb(53, 179, 169);
+}
+
+/*----------------------FOOTER----------------------*/
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(41, 99, 163);
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+}
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    list-style: none;
+    gap: 16px;
+}
+.menu__item_footer{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+}
+.menu__item_footer:hover{
+    color: #03B2A5;
+}
+.footer__first{
+    margin-right: 93px;
+}
+.footer__second{
+    margin-right: 91.5px;
+}
+
+.subscribe__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 486px;
+    height: 170px;
+    margin-bottom: 38px;
+    margin-right: 91.5px;
+}
+.subscribe__email{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 356px;
+    height: 52px;
+}
+.input__email_container{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    width: 384px;
+    height: 48px;
+}
+.input__email{
+    width: 384px;
+    height: 48px;
+    border-radius: 4px;
+    color: rgb(157, 157, 157);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 16px;
+}
+.subscribe__btn{
+    margin: 0;
+    background: rgb(22, 200, 187);
+    border-radius: 4px;
+    width: 64px;
+    height: 48px;
+    align-items: center;
+    cursor: pointer;
+}
+.personal_data{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.icons__container{
+    display: flex;
+    flex-direction: column;
+}
+.social__network{
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+}
+.icon__social_network{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    background: rgb(239, 245, 251);
+    justify-content: center;
+}
+
+.stripe{
+    margin-bottom: 16px;
+    width: 1200px;
+    height: 1px;
+    background: rgb(157, 157, 157);
+    opacity: 0.3;
+}
+
+.underfooter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 17px;
+}
+.underfooter__other{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+/*----------------------OPTIONS----------------------*/
+@media screen and (max-width: 1024px) {
+    .header__container {
+        margin: 20px 32px;
+    }
+    .header__menu {
+        margin-left: 32px;
+        gap: 16px;
+    }
+    .header__btn {
+        margin-left: 20px;
+    }
+
+    .main__container {
+        margin: 16px 32px;
+    }
+    .heading__name {
+        margin-top: 34px;
+    }
+
+
+    .photo__emotional_burnout{
+        background: url("../images/block/block1-img1.png") lightgray -1px -30px / 100% 120% no-repeat;
+        width: 468px;
+        height: 260px;
+    }
+    .photo__anxiety_fears{
+        background: url("../images/block/block1-img2.png") lightgray -1px -25px / 100% 120% no-repeat;
+        width: 468px;
+        height: 260px;
+    }
+    .blog__container_one{
+        width: 468px;
+        height: 240px;
+    }
+    .blog__one{
+        flex-wrap: nowrap;
+    }
+
+
+    .blog__style_two{
+        width: 304px;
+        height: 499px;
+    }
+    .blog__container_two{
+        width: 304px;
+        height: 293px;
+    }
+    .photo__emotional_burnout_two{
+        background: url("../images/block/block2-img1.png") lightgray -1px -15px / 100% 130% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_two{
+        background: url("../images/block/block2-img2.png") lightgray -1px -15px / 100% 120% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+    .managing__emotions{
+        background: url("../images/block/block2-img3.png") lightgray -1px -15px / 100% 110% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+    .photo__emotional_burnout_three{
+        background: url("../images/block/block3-img1.jpeg") lightgray -1px -10px / 100% 110% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_three{
+        background: url("../images/block/block3-img2.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+    .managing__emotions_two{
+        background: url("../images/block/block3-img3.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+        width: 304px;
+        height: 206px;
+    }
+
+    .btn__container{
+        margin-top: 35px;
+        margin-bottom: 60px;
+    }
+
+
+    .footer__container{
+        padding-left: 38px;
+        padding-right: 28px;
+    }
+    .footer__first{
+        margin-right: 30px;
+    }
+    .footer__second{
+        margin-right: 21px;
+    }
+    .subscribe__container{
+        margin-right: 20px;
+        width: 450px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__container {
+        /*width: 80%;*/
+        display: flex;
+        margin: 20px 20px;
+    }
+
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 40px;
+        text-align: center;
+        right: 20px;
+        top: 18px;
+        bottom: 18px;
+        color: #03B2A5;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+        background: #E3F5F5;
+        /*width: 80%;*/
+    }
+    #burger:checked + label + nav{
+        display: inline-block;
+        animation: show .5s ease;
+    }
+    .header__btn{
+        display: none;
+    }
+    .header__menu{
+        display: inline-block; 
+    }
+    .burger__btn{
+        width: 10px;
+        height: 10px;
+    }
+
+    .main__container {
+        margin: 16px 20px;
+    }
+
+    .photo__emotional_burnout{
+        background: url("../images/block/block1-img1.png") lightgray -1px -45px / 100% 120% no-repeat;
+        width: 728px;
+        height: 404px;
+    }
+    .photo__anxiety_fears{
+        background: url("../images/block/block1-img2.png") lightgray -1px -25px / 100% 120% no-repeat;
+        width: 728px;
+        height: 404px;
+    }
+    .blog__container_one{
+        width: 728px;
+        height: 196px;
+    }
+    .blog__style_one{
+        width: 728px;
+        height: 600px;
+    }
+    .blog__one{
+        flex-wrap:wrap;
+    }
+
+
+    .blog__style_two{
+        width: 352px;
+        height: 447px;
+    }
+    .blog__container_two{
+        width: 352px;
+        height: 241px;
+    }
+    .photo__emotional_burnout_two{
+        background: url("../images/block/block2-img1.png") lightgray -1px -15px / 100% 130% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_two{
+        background: url("../images/block/block2-img2.png") lightgray -1px -15px / 100% 120% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .managing__emotions{
+        background: url("../images/block/block2-img3.png") lightgray -1px -15px / 100% 110% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .photo__emotional_burnout_three{
+        background: url("../images/block/block3-img1.jpeg") lightgray -1px -10px / 100% 110% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_three{
+        background: url("../images/block/block3-img2.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .managing__emotions_two{
+        background: url("../images/block/block3-img3.jpeg") lightgray -1px -0px / 100% 100% no-repeat;
+        width: 352px;
+        height: 206px;
+    }
+    .btn__container{
+        margin-top: 33px;
+        margin-bottom: 55px;
+    }
+
+    .footer__container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .subscribe__container{
+        margin-right: 0px;
+        width: 450px;
+        height: 170px;
+    }
+    .social__network{
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header__container {
+        margin: 19px 24px;
+    }
+    
+    .main__container{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+    .filter__teg{
+        display: flex;
+        flex-wrap: nowrap;
+        height: auto;
+        overflow-x: auto;
+        width: auto;
+    }
+    .teg__btn {
+        flex: 0 0 auto;
+    }
+    .filter__teg::-webkit-scrollbar{
+        width: 0;
+    }
+    .name__blog{
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .photo__emotional_burnout{
+        background: url("../images/block/block1-img1.png") lightgray -1px -25px / 100% 120% no-repeat;
+        width: 374px;
+        height: 206px;
+    }
+    .photo__anxiety_fears{
+        background: url("../images/block/block1-img2.png") lightgray -1px -20px / 100% 120% no-repeat;
+        width: 374px;
+        height: 206px;
+    }
+    .blog__container_one{
+        width: 374px;
+        height: 260px;
+    }
+    .blog__style_one{
+        width: 374px;
+        height: 466px;
+    }
+    .blog__one{
+        flex-wrap:wrap;
+    }
+
+
+    .blog__style_two{
+        width: 374px;
+        height: 466px;
+    }
+    .blog__container_two{
+        width: 374px;
+        height: 260px;
+    }
+    .photo__emotional_burnout_two{
+        background: url("../images/block/block2-img1.png") lightgray -1px -15px / 100% 130% no-repeat;
+        width: 374px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_two{
+        background: url("../images/block/block2-img2.png") lightgray -1px -15px / 100% 120% no-repeat;
+        width: 374px;
+        height: 206px;
+    }
+    .blog__hidden{
+        display: none;
+    }
+    .btn__container{
+        margin-top: 28px;
+        margin-bottom: 59px;
+    }
+
+    .footer__container{
+        padding-left: 19px;
+        padding-right: 20px;
+    }
+    .footer__first{
+        margin-right: 158px;
+    }
+    .footer__second{
+        margin-right: 0px;
+    }
+    .subscribe__container{
+        margin-bottom: 31px;
+    }
+    .social__network{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .underfooter{
+        flex-direction: column;
+        gap: 20px
+    }
+}
+
+@media screen and (max-width: 322px){
+    .header__container {
+        margin: 11px 16px;
+    }
+
+    .main__container{
+        margin: 11px 16px;
+    }
+    .name__blog{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .photo__emotional_burnout{
+        background: url("../images/block/block1-img1.png") lightgray 1px -10px / 100% 110% no-repeat;
+        width: 288px;
+        height: 206px;
+    }
+    .photo__anxiety_fears{
+        background: url("../images/block/block1-img2.png") lightgray -1px -20px / 100% 120% no-repeat;
+        width: 288px;
+        height: 206px;
+    }
+    .blog__container_one{
+        width: 288px;
+        height: 294px;
+    }
+    .blog__style_one{
+        width: 288px;
+        height: 500px;
+    }
+    .blog__one{
+        flex-wrap:wrap;
+    }
+
+    
+    .blog__style_two{
+        width: 288px;
+        height: 500px;
+    }
+    .blog__container_two{
+        width: 288px;
+        height: 294px;
+    }
+    .photo__emotional_burnout_two{
+        background: url("../images/block/block2-img1.png") lightgray -1px -15px / 100% 130% no-repeat;
+        width: 288px;
+        height: 206px;
+    }
+    .photo__anxiety_fears_two{
+        background: url("../images/block/block2-img2.png") lightgray -1px -15px / 100% 120% no-repeat;
+        width: 288px;
+        height: 206px;
+    }
+
+    .footer__container{
+        padding-left: 11px;
+        padding-right: 16px;
+    }
+    .footer__first{
+        margin-right: 71px;
+    }
+    .subscribe__container{
+        width: 288px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .subscribe__email{
+        width: 288px;
+        height: 78px;
+    }
+    .input__email_container{
+        width: 288px;
+        height: 48px;
+    }
+    .input__email{
+        width: 200px;
+    }
+    .subscribe__btn{
+        display: none;
+    }
+    .social__network{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .underfooter{
+        flex-direction: column;
+        gap: 20px
+    }
+}

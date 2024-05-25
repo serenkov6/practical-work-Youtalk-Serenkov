@@ -1,0 +1,2191 @@
+@import url("font.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+/*----------------------HEADER----------------------*/
+.header {
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(239, 245, 251, 1);
+}
+
+.header__container {
+    margin: 20px 120px;
+    display: flex;
+    align-items: center;
+}
+
+/*.header__logo {
+}*/
+
+.header__menu {
+    margin-left: 51px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    color: var(--text-primary, #333);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 114%;
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.m1 {
+    padding-left: 8px;
+}
+
+.menu__item {
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--text-primary, #333);
+}
+.menu__item:hover{
+    background-color: #03B2A5;
+    color: white;
+}
+
+.header__btn {
+    display: flex;
+    margin-left: 164px;
+    padding: 14px 20px;
+    align-items: center;
+    border-radius: 4px;
+    border-color: transparent;
+    background: #E3F5F5;
+    color: var(--main-03-b-2-a-5, #03B2A5);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#burger, [for=burger]{
+    display: none;
+}
+/*----------------------MAIN----------------------*/
+.main__container {
+    margin: 16px 120px;
+    padding: 0;
+    max-width: 1440px;
+    display: block;
+}
+
+.main__menu {
+    list-style: none;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.menu__bar {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(51, 51, 51, 0.70); 
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    letter-spacing: 0.25px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.menu__bar:hover{
+    background-color: #03B2A5;
+    color: white;
+}
+
+.content__container{
+    display: flex;
+    gap: 228px;
+    margin-top: 54px;
+}
+
+.blog__container{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 690px;
+}
+h1{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.authors__name{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    color: rgb(73, 73, 73);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.img__girl{
+    object-fit: cover;
+    width: 690px;
+    height: 331px;
+}
+.content-list__container{
+    margin-top: 24px;
+    width: 588px;
+    height: 274px;
+}
+.content-list-blog{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.content-list{
+    display: flex;
+    margin-top: 16px;
+}
+.list-name__first-lvl,
+.lighthouse{
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-decoration-line: underline;
+    list-style-type: disc;
+}
+.lighthouse:hover{
+    color: #03B2A5;
+}
+.list-name__second-lvl{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+}
+.markcol_green{
+    color: rgb(3, 178, 165);
+    padding: 0;
+    padding-left: 8px;
+    margin-left: 30px;
+}
+.indent_first{
+    padding-left: 24px;
+}
+.indent_second{
+    padding-left: 40px;
+}
+.indent_third{
+    padding-left: 56px;
+}
+/*-----Заголовок h3-----*/
+.heading-h__container{
+    margin-top: 24px;
+}
+.title__h-third{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.text__third-title{
+    margin-top: 16px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.quote-third-title__container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+    border-radius: 16px;
+    padding: 24px;
+    width: 690px;
+    height: 162px;
+    background: rgb(243, 247, 254);
+    background-image: url(../images/svg2/quote.svg);
+    background-repeat: no-repeat;
+    background-position: 24px 24px;
+}
+.quote{
+    margin-top: 10px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.quote__author{
+    margin-top: 8px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*-----Что еще можно делать с тревогой?-----*/
+.do-with-anxiety__container{
+    margin-top: 24px;
+}
+.title__do-with-anxiety{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.text-do-with-anxiety__container{
+    margin-top: 16px;
+}
+.text__do-with-anxiety{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-left: 32px;
+}
+.text__markcol-green{
+    color: rgb(3, 178, 165);
+    padding-left: 16px;
+    margin-left: -8px;
+}
+.text__itself{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.img__do-with-anxiety{
+    margin-top: 24px;
+}
+.img__walking-people{
+    object-fit: cover;
+    width: 690px;
+    height: 331px;
+}
+.picture_description{
+    margin-top: 16px;
+    color: rgb(134, 134, 134);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+.blog-content{
+    margin-top: 24px;
+}
+.blog-content__text{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.blog-slogan__container{
+    display: flex;
+    width: 691px;
+    height: 168px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/svg2/img-slogan.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+}
+.blog-slogan{
+    width: 485px;
+    height: 96px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+}
+.img-and-text__do-with-anxiety{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 24px;
+}
+.text-next-to-picture{
+    width: 385px;
+}
+.girl-glass{
+    width: 282px;
+    height: 380px;
+}
+.repetitive-text{
+    margin-top: 24px;
+}
+
+.first-exercise__container{
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 16px;
+    background: rgb(254, 250, 236);
+    padding: 24px;
+    gap: 8px;
+}
+.title-exercise{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.text-exercise{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+/*-----Что еще можно делать с тревогой? Часть II-----*/
+.do-with-anxiety__container-part-two{
+    margin-top: 24px;
+}
+.title-and-text__part-two{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+.text-part-two__container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+.text-part-two{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.picture-and-text__container{
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.hands{
+    width: 281px;
+    height: 174px;
+}
+
+.second-exercise__container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 24px;
+    background: rgb(255, 243, 235);
+    border-radius: 16px;
+}
+
+.two-columns__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 24px;
+}
+.column-left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 333px;
+}
+.picture-left{
+    width: 333px;
+    height: 235px;
+}
+
+.column-right{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 333px;
+}
+.picture-right{
+    width: 333px;
+    height: 235px;
+}
+
+.dividing-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.third-exercise__container{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border-radius: 16px;
+    background: rgba(3, 178, 165, 0.1);
+}
+
+/*-----Хэштег-----*/
+.hashtag__container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.first-line,
+.second-line{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.hash-teg{
+    color: rgb(41, 99, 163);
+    text-decoration: none;
+}
+
+/*-----Откликается проблема?-----*/
+.additional-block{
+    margin-top: 48px;
+}
+.separating-line{
+    width: 1200px;
+    border: 1px solid rgb(222, 222, 222);
+    margin-bottom: 72px;
+}
+.choose-psychologist__container{
+    display: flex;
+    flex-direction: row;
+}
+.choose-psychologist__btn-and-text{
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    height: 280px;
+}
+.choose-psychologist__name{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.choose-psychologist__description{
+    margin-top: 24px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.choose-psychologist__button{
+    margin-top: 32px;
+}
+.choose-psychologist__press-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 24px 20px 24px;
+    border-radius: 4px;
+    background: rgb(22, 200, 187);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+.choose-psychologist__img{
+    width: 520px;
+    height: 330px;
+    margin-left: 303px;
+}
+.pink-object{
+    margin-left: 72px;
+}
+
+/*-----Сайдбар-----*/
+.aside__container{
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    gap: 24px;
+}
+/*-----Загружаем свободные окошки-----*/
+.loading-the-free-windows{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 282px;
+    height: 512px;
+    padding: 24px;
+    border-radius: 16px;
+    background: rgb(230, 240, 253);
+}
+.loading-the-free-windows__name{
+    margin-top: 27px;
+    width: 234px;
+    height: 48px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.loading-the-free-windows__text{
+    margin-top: 11px;
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+.loading-the-free-windows__button{
+    margin-top: 24px;
+}
+.more-detailed__btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 234px;
+    height: 48px;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background: rgb(53, 179, 169);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*-----Психолог Лилиа-----*/
+.psychologist-lilia__container{
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 481px;
+    padding: 24px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+.types-of-communication{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 120px;
+    gap: 14px;
+    background-image: url(../images/side-img/lilia.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 120px 120px; 
+}
+.correspondence{
+    display: flex;
+    flex-direction: row;
+    width: 105px;
+    height: 24px;
+    gap: 4px;
+    padding: 0;
+}
+.video-icon{
+    display: flex;
+    flex-direction: row;
+    width: 74px;
+    height: 24px;
+    gap: 4px;
+    padding: 0;
+}
+.icon-shell{
+    margin-top: -8px;
+    margin-left: -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 6px 0px 6px;
+    border-radius: 6px;
+    background: rgba(243, 244, 248, 0.7);
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+.information-about-psychologist{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-psychologist{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.post-psychologist{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.experience-psychologist{
+    margin-top: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(162, 167, 177);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.indentation-point{
+    width: 4px;
+    height: 4px;
+    background: rgb(162, 167, 177);
+    border-radius: 360px;
+}
+
+.line-psychologist{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: -8px;
+    width: 250px;
+    height: 1px;
+    box-shadow: 0px 1px 0px 0px rgb(222, 222, 222);
+    background: rgb(255, 255, 255);
+}
+.does-psychologist-with-work{
+    margin-left: -8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.description-psychologist-work{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.description-work{
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.green-point{
+    color: #03B2A5
+}
+.text-work{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.registration-for-call{
+    margin-top: 24px;
+    margin-left: -8px;
+    width: 250px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background: rgb(53, 179, 169);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*-----Дарите заботу-----*/
+.give-care__container{
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    height: 292px;
+    border-radius: 16px;
+    background: rgb(41, 99, 163);
+    overflow: hidden;
+}
+.give-care__link{
+    display: flex;
+    width: 282px;
+    height: 280px;
+    background-image: url(../images/side-img/confeti.svg);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    flex-direction: column;
+}
+.give-care__text{
+    margin-top: 60px;
+    margin-left: 24px;
+    display: flex;
+    width: 234px;
+    height: 80px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0%;
+}
+.boxs-img{
+    display: flex;
+    position: relative;
+}
+.box-blu{
+    position: absolute;
+    top: 12px;
+    left: 104px;
+}
+.box-yellow{
+    position: absolute;
+    top: 40px;
+    right: 146px;
+}
+
+.box-orange{
+    position: absolute;
+    top: 76px;
+    left: 175px;
+}
+
+/*-----8 видео сессий-----*/
+.video-sessions__container{
+    overflow: hidden;
+    width: 282px;
+    height: 304px;
+    border-radius: 24px;
+    border: 1px solid rgb(222, 222, 222);
+}
+.eight-video-sessions{
+    width: 218px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 32px
+}
+.name__eight-video-sessions{
+    display: flex;
+    width: 158px;
+    height: 32px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 4px;
+}
+.eight__text{
+    color: rgb(41, 99, 163);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.video-sessions__text{
+    color: rgb(41, 99, 163);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.description__video-sessions{
+    width: 194px;
+    height: 80px;
+    color: rgb(1, 22, 50);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.price__video-sessions{
+    color: rgb(51, 51, 51);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.price-btn__video-sessions{
+    width: 108px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px 12px 16px;
+    border-radius: 4px;
+    background: rgb(53, 179, 169);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+.prize-img{
+    display: flex;
+    position: relative;
+}
+.prize-orange{
+    position: absolute;
+    left: 165px;
+    top: -85px;
+}
+.prize-blu{
+    position: absolute;
+    left: 194px;
+    top: -72px;
+}
+
+.spot-object{
+    margin-top: 609px;
+    margin-left: 184px;
+}
+/*-----Голубой фон-----*/
+.background{
+    margin-top: 32px;
+    height: 82px;
+    overflow-y: hidden;
+    background-image: url(../images/svg2/back.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/*-----Наведение на кнопку-----*/
+.click-btn:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(53, 179, 169);
+    border: 2px solid rgb(53, 179, 169);
+}
+.pick-up:hover{
+    background: var(--main-03-b-2-a-5, #03B2A5);
+    color: #E3F5F5;
+}
+
+/*-----Скрытый элемент в названии блога-----*/
+.font-element{
+    color: rgb(41, 99, 163);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.hidden-element{
+    display: none;
+}
+
+/*----------------------FOOTER----------------------*/
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(41, 99, 163);
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 40px;
+    /*margin-top: -16px;*/
+}
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.footer__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    list-style: none;
+    gap: 16px;
+}
+.menu__item_footer{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+}
+.menu__item_footer:hover{
+    color: #03B2A5;
+}
+.footer__first{
+    margin-right: 93px;
+}
+.footer__second{
+    margin-right: 91.5px;
+}
+
+.subscribe__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 486px;
+    height: 170px;
+    margin-bottom: 38px;
+    margin-right: 91.5px;
+}
+.subscribe__email{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 356px;
+    height: 52px;
+}
+.input__email_container{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    width: 384px;
+    height: 48px;
+}
+.input__email{
+    width: 384px;
+    height: 48px;
+    border-radius: 4px;
+    color: rgb(157, 157, 157);
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 16px;
+}
+.subscribe__btn{
+    margin: 0;
+    background: rgb(22, 200, 187);
+    border-radius: 4px;
+    width: 64px;
+    height: 48px;
+    align-items: center;
+    cursor: pointer;
+}
+.personal_data{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.icons__container{
+    display: flex;
+    flex-direction: column;
+}
+.social__network{
+    display: flex;
+    margin-top: 40px;
+    gap: 16px;
+}
+.icon__social_network{
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 60px;
+    background: rgb(239, 245, 251);
+    justify-content: center;
+}
+
+.stripe{
+    margin-bottom: 16px;
+    width: 1200px;
+    height: 1px;
+    background: rgb(157, 157, 157);
+    opacity: 0.3;
+}
+
+.underfooter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-bottom: 17px;
+}
+.underfooter__other{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+
+/*----------------------OPTIONS----------------------*/
+@media screen and (max-width: 1024px) {
+    /*----------------HEADER----------------*/
+    .header__container {
+        margin: 20px 32px;
+    }
+    .header__menu {
+        margin-left: 32px;
+        gap: 16px;
+    }
+    .header__btn {
+        margin-left: 20px;
+    }
+    /*----------------MAIN----------------*/
+    .main__container {
+        margin: 16px 32px;
+    }
+    .hidden-element{
+        display: block;
+    }
+
+    .hidden-on-mobile{
+        display: none;
+    }
+
+    .content__container{
+        gap: 24px;
+    }
+    .blog__container{
+        width: 714px;
+    }
+    .content-list__container{
+        height: auto;
+    }
+    .text__markcol-green{
+        color: rgb(3, 178, 165);
+        padding-left: 10px;
+        margin-left: -11px;
+    }
+    .text-next-to-picture{
+        width: 408px;
+    }
+
+    .column-left{
+        gap: 24px;
+        width: 345px;
+    }
+    .picture-left{
+        width: 345px;
+        height: 235px;
+    }
+    
+    .column-right{
+        width: 345px;
+    }
+    .picture-right{
+        width: 345px;
+        height: 235px;
+    }
+
+    /*-----Сайдбар-----*/
+    .loading-the-free-windows{
+        width: 222px;
+        height: 495px;
+        padding: 20px;
+    }
+    .three-persons-img{
+        width: 181px;
+        height: 181px;
+    }
+    .loading-the-free-windows__name{
+        margin-top: 0px;
+        width: 182px;
+        height: 72px;
+    }
+    .more-detailed__btn{
+        width: 182px;
+        height: 48px;
+    }
+    
+    /*-----Психолог Лилия-----*/
+    .psychologist-lilia__container{
+        width: 222px;
+        height: 530px;
+        padding: 24px;
+    }
+    .line-psychologist{
+        margin-left: 0px;
+        width: 174px;
+    }
+    .registration-for-call{
+        margin-top: 24px;
+        margin-left: 0px;
+        width: 174px;
+        height: 48px;
+    }
+
+    /*-----Дарите заботу-----*/
+    .give-care__container{
+        width: 222px;
+        height: 292px;
+    }
+    .give-care__link{
+        width: 222px;
+        height: 192px;
+        background-position: 50%;
+    }
+    .give-care__text{
+        margin-top: 60px;
+        margin-left: 0px;
+        width: 222px;
+        height: 80px;
+    }
+    .box-blu{
+        position: absolute;
+        top: 12px;
+        left: 64px;
+    }
+    .box-yellow{
+        position: absolute;
+        top: 40px;
+        right: 126px;
+    }
+    .box-orange{
+        position: absolute;
+        top: 76px;
+        left: 135px;
+    }
+
+    /*-----8 видео сессий-----*/
+    .video-sessions__container{
+        overflow: hidden;
+        width: 222px;
+        height: 308px;
+        border-radius: 24px;
+    }
+    .eight-video-sessions{
+        width: 174px;
+        height: 260px;
+        margin: 24px
+    }
+    .description__video-sessions{
+        width: 174px;
+        height: 100px;
+    }
+    .prize-orange{
+        position: absolute;
+        left: 130px;
+        top: -85px;
+    }
+    .prize-blu{
+        position: absolute;
+        left: 149px;
+        top: -72px;
+    }
+    /*----------------FOOTER----------------*/ 
+    .footer__container{
+        padding-left: 38px;
+        padding-right: 28px;
+    }
+    .footer__first{
+        margin-right: 30px;
+    }
+    .footer__second{
+        margin-right: 21px;
+    }
+    .subscribe__container{
+        margin-right: 20px;
+        width: 450px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*----------------HEADER----------------*/
+    .header__container {
+        /*width: 80%;*/
+        display: flex;
+        margin: 20px 20px;
+    }
+
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 40px;
+        text-align: center;
+        right: 20px;
+        top: 18px;
+        bottom: 18px;
+        color: #03B2A5;
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+        background: #E3F5F5;
+        /*width: 80%;*/
+    }
+    #burger:checked + label + nav{
+        display: inline-block;
+        animation: show .5s ease;
+    }
+    .header__btn{
+        display: none;
+    }
+    .header__menu{
+        display: inline-block; 
+    }
+    .burger__btn{
+        width: 10px;
+        height: 10px;
+    }
+
+    /*----------------MAIN----------------*/
+    .main__container {
+        margin: 16px 20px;
+    }
+
+    .content__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog__container{
+        width: 728px;
+    }
+    .img__girl{
+        width: 714px;
+        height: 331px;
+    }
+    .content-list__container{
+        height: auto;
+        width: auto;
+    }
+    .quote-third-title__container{
+        width: 728px;
+
+    }
+    .text__markcol-green{
+        color: rgb(3, 178, 165);
+        padding-left: 10px;
+        margin-left: -11px;
+    }
+    .text-next-to-picture{
+        width: 408px;
+    }
+    .img__walking-people{
+        width: 714px;
+        height: 331px;
+    }
+    .blog-slogan__container{
+        width: 728px;
+    }
+
+    .two-columns__container{
+        gap: 16px;
+    }
+    .column-left{
+        gap: 24px;
+        width: 356px;
+    }
+    .picture-left{
+        width: 356px;
+        height: 235px;
+    }
+    
+    .column-right{
+        width: 356px;
+    }
+    .picture-right{
+        width: 356px;
+        height: 235px; 
+    }
+
+    /*-----Сайдбар-----*/
+    .aside__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: -24px;
+    }
+    /*-----Загружаем свободные окошки-----*/
+    .loading-the-free-windows{
+        width: 356px;
+        height: 481px;
+        padding: 23px;
+    }
+    .three-persons-img{
+        width: 257px;
+        height: 206px;
+    }
+    .loading-the-free-windows__name{
+        margin-top: 24px;
+        width: 300px;
+        height: 48px;
+    }
+    .more-detailed__btn{
+        width: 310px;
+        height: 48px;
+    }
+    
+    /*-----Психолог Лилия-----*/
+    .psychologist-lilia__container{
+        width: 355px;
+        height: 481px;
+        padding: 24px;
+    }
+    .line-psychologist{
+        margin-left: 28.5px;
+        width: 250px;
+    }
+    .does-psychologist-with-work{
+        align-items: center;
+    }
+    .registration-for-call{
+        align-items: center;
+        margin-top: 24px;
+        margin-left: 28.5px;
+        width: 250px;
+        height: 48px;
+    }
+
+    /*-----Дарите заботу-----*/
+    .give-care__container{
+        width: 356px;
+        height: 242px;
+    }
+    .give-care__link{
+        width: 356px;
+        height: 192px;
+        background-position: 50%;
+    }
+    .give-care__text{
+        margin-top: 60px;
+        margin-left: 60px;
+        width: 253px;
+        height: 40px;
+    }
+    .box-blu{
+        position: absolute;
+        width: 190px;
+        height: 181px;
+        top: 20px;
+        left: 143px;
+    }
+    .box-yellow{
+        position: absolute;
+        width: 128px;
+        height: 166px;
+        top: 40px;
+        right: 177px;
+    }
+    .box-orange{
+        position: absolute;
+        width: 90px;
+        height: 136px;
+        top: 76px;
+        left: 245px;
+    }
+
+    /*-----8 видео сессий-----*/
+    .video-sessions__container{
+        overflow: hidden;
+        width: 356px;
+        height: 248px;
+    }
+    .eight-video-sessions{
+        width: 291.6px;
+        height: 220px;
+        margin: 24px
+    }
+    .description__video-sessions{
+        width: 291.6px;
+        height: 60px;
+    }
+    .prize-orange{
+        position: absolute;
+        left: 173px;
+        top: -106px;
+    }
+    .prize-blu{
+        position: absolute;
+        left: 202px;
+        top: -94px;
+    }
+
+    /*----------------FOOTER----------------*/
+    .footer__container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .subscribe__container{
+        margin-right: 0px;
+        width: 450px;
+        height: 170px;
+    }
+    .social__network{
+        margin-top: 40px;
+        margin-bottom: 27px;
+    }
+}
+
+@keyframes show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    /*----------------HEADER----------------*/
+    .header__container {
+        margin: 19px 24px;
+        width: 360px;
+    }
+    .header__btn{
+        margin-left: 0px;
+    }
+    .header{
+        width: 414px;
+    }
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 40px;
+        text-align: center;
+        right: 40px;
+        top: 29px;
+        bottom: 18px;
+        color: #03B2A5;
+    }
+    /*----------------MAIN----------------*/
+    .main__container{
+        margin-top: 16px;
+        margin-left: 20px;
+    }
+    .main__menu {
+        width: 374px;
+        overflow: hidden;
+    }
+
+    .blog__container{
+        width: 374px;
+    }
+    .name__blog{
+        width: 374px;
+    }
+    h1{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .img__title{
+        width: 374px;
+    }
+    .img__girl{
+        width: 374px;
+        height: 207px;
+    }
+    .content-list__container{
+        width: 374px;
+        height: 168px;
+    }
+    .heading-h__container{
+        width: 374px;
+    }
+    .quote-third-title__container{
+        width: 374px;
+        height: auto;
+        padding: 16px;
+    }
+    .do-with-anxiety__container{
+        width: 374px;
+    }
+    .text__markcol-green{
+        color: rgb(3, 178, 165);
+        padding-left: 10px;
+        margin-left: -11px;
+    }
+    .text-next-to-picture{
+        width: 408px;
+    }
+    .img__walking-people{
+        width: 374px;
+        height: 207px;
+    }
+    .blog-slogan__container{
+        width: 374px;
+    }
+    
+    .img-and-text__do-with-anxiety{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .text-next-to-picture{
+        width: 374px;
+    }
+    .girl-glass{
+        width: 374px;
+        height: 380px;
+    }
+
+    .do-with-anxiety__container-part-two{
+        width: 374px;
+    }
+
+    .picture-and-text__container{
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .hands{
+        width: 374px;
+        height: 207px;
+    }
+
+    .repetitive-text{
+        margin-top: 24px;
+    }
+
+    .two-columns__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .two-columns__container{
+        gap: 16px;
+    }
+    .column-left{
+        gap: 24px;
+        width: 374px;
+    }
+    .picture-left{
+        width: 374px;
+        height: 235px;
+    }
+    
+    .column-right{
+        width: 374px;
+    }
+    .picture-right{
+        width: 374px;
+        height: 235px;
+    }
+
+    /*-----Сайдбар-----*/
+    .aside__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: -24px;
+    }
+    /*-----Загружаем свободные окошки-----*/
+    .loading-the-free-windows{
+        width: 374px;
+        height: 512px;
+        padding: 23px;
+    }
+    .three-persons-img{
+        width: 257px;
+        height: 206px;
+    }
+    .loading-the-free-windows__name{
+        margin-top: 24px;
+        width: 300px;
+        height: 48px;
+    }
+    .more-detailed__btn{
+        width: 310px;
+        height: 48px;
+    }
+    
+    /*-----Психолог Лилия-----*/
+    .psychologist-lilia__container{
+        width: 374px;
+        height: 481px;
+        padding: 24px;
+    }
+    .line-psychologist{
+        margin-left: 28.5px;
+        width: 250px;
+    }
+    .does-psychologist-with-work{
+        align-items: center;
+    }
+    .registration-for-call{
+        align-items: center;
+        margin-top: 24px;
+        margin-left: 28.5px;
+        width: 250px;
+        height: 48px;
+    }
+
+    /*-----Дарите заботу-----*/
+    .give-care__container{
+        width: 374px;
+        height: 292px;
+    }
+    .give-care__link{
+        width: 356px;
+        height: 192px;
+        background-position: 50%;
+    }
+    .give-care__text{
+        margin-top: 60px;
+        margin-left: 60px;
+        width: 253px;
+        height: 40px;
+    }
+    .box-blu{
+        position: absolute;
+        width: 190px;
+        height: 181px;
+        top: 52px;
+        left: 143px;
+    }
+    .box-yellow{
+        position: absolute;
+        width: 128px;
+        height: 166px;
+        top: 65px;
+        right: 177px;
+    }
+    .box-orange{
+        position: absolute;
+        width: 90px;
+        height: 136px;
+        top: 100px;
+        left: 245px;
+    }
+
+    /*-----8 видео сессий-----*/
+    .video-sessions__container{
+        overflow: hidden;
+        width: 374px;
+        height: 248px;
+    }
+    .eight-video-sessions{
+        width: 291.6px;
+        height: 220px;
+        margin: 24px
+    }
+    .description__video-sessions{
+        width: 291.6px;
+        height: 60px;
+    }
+    .prize-orange{
+        position: absolute;
+        left: 197px;
+        top: -106px;
+    }
+    .prize-blu{
+        position: absolute;
+        left: 226px;
+        top: -94px;
+    }
+
+ 
+    /*----------------FOOTER----------------*/
+    .footer__container{
+        padding-left: 19px;
+        padding-right: 20px;
+    }
+    .footer__first{
+        margin-right: 158px;
+    }
+    .footer__second{
+        margin-right: 0px;
+    }
+    .subscribe__container{
+        margin-bottom: 31px;
+    }
+    .social__network{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .underfooter{
+        flex-direction: column;
+        gap: 20px
+    }
+}
+
+@media screen and (max-width: 320px){
+    /*----------------HEADER----------------*/
+    .header__container {
+        margin: 11px 16px;
+        width: 290px;
+    }
+
+    .header{
+        width: 320px;
+    }
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 40px;
+        text-align: center;
+        right: 20px;
+        top: 29px;
+        bottom: 18px;
+        color: #03B2A5;
+    }
+
+    .main__container{
+        margin: 11px 16px;
+    }
+
+    .main__menu {
+        width: 288px;
+        overflow: hidden;
+    }
+
+    .content__container{
+        margin-top: 32px;
+    }
+    .blog__container{
+        width: 288px;
+    }
+    .name__blog{
+        width: 288px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .img__title{
+        width: 288px;
+    }
+    .img__girl{
+        width: 288px;
+        height: 160px;
+    }
+    .content-list__container{
+        width: 288px;
+        height: 184px;
+        margin-top: 16px;
+        gap: 8px;
+    }
+    .list-name__first-lvl{
+        gap: 0px;
+    }
+
+    .heading-h__container{
+        width: 288px;
+        margin-top: 16px;
+    }
+    .title__h-third{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .quote-third-title__container{
+        width: 288px;
+        height: auto;
+        padding: 16px;
+        margin-top: 16px;
+    }
+
+    .do-with-anxiety__container{
+        width: 288px;
+    }
+    .blog-content{
+        margin-top: 16px;
+    }
+    .title__do-with-anxiety{
+        font-size: 18px;
+        line-height: 26px;   
+    }
+    .text__markcol-green{
+        color: rgb(3, 178, 165);
+        padding-left: 10px;
+        margin-left: -11px;
+    }
+    .text-next-to-picture{
+        width: 288px;
+    }
+    .img__walking-people{
+        width: 288px;
+        height: 160px;
+    }
+    .blog-slogan__container{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        width: 288px;
+        height: 176px;
+    }
+    .blog-slogan{
+        width: 288px;
+        height: 168px;
+    }
+    
+    .img-and-text__do-with-anxiety{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .text-next-to-picture{
+        width: 288px;
+    }
+    .girl-glass{
+        width: 288px;
+        height: 380px;
+    }
+
+    .third-exercise__container{
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .do-with-anxiety__container-part-two{
+        width: 288px;
+    }
+
+    .picture-and-text__container{
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .text-part-two{
+        gap: 8px;
+    }
+
+    .hands{
+        width: 288px;
+        height: 160px;
+    }
+
+    .repetitive-text{
+        margin-top: 16px;
+    }
+
+    .third-exercise__container{
+        margin-top: 16px;
+        padding: 16px;
+    }
+
+    .two-columns__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .two-columns__container{
+        gap: 16px;
+    }
+    .column-left{
+        gap: 16px;
+        width: 288px;
+    }
+    .picture-left{
+        width: 288px;
+        height: 235px;
+    }
+    
+    .column-right{
+        gap: 16px;
+        width: 288px;
+    }
+    .picture-right{
+        width: 288px;
+        height: 235px;
+    }
+
+    .third-exercise__container{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 16px;
+    }
+
+    /*-----Сайдбар-----*/
+    .aside__container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-top: -24px;
+    }
+    /*-----Загружаем свободные окошки-----*/
+    .loading-the-free-windows{
+        width: 288px;
+        height: 512px;
+        padding: 24px;
+    }
+    .three-persons-img{
+        width: 257px;
+        height: 206px;
+    }
+    .loading-the-free-windows__name{
+        margin-top: 24px;
+        width: 300px;
+        height: 48px;
+    }
+    .more-detailed__btn{
+        width: 239px;
+        height: 48px;
+    }
+    
+    /*-----Психолог Лилия-----*/
+    .psychologist-lilia__container{
+        width: 288px;
+        height: 481px;
+        padding: 19px;
+    }
+    .line-psychologist{
+        margin-left: 0px;
+        width: 250px;
+    }
+    .does-psychologist-with-work{
+        align-items: center;
+    }
+    .registration-for-call{
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 0px;
+        width: 250px;
+        height: 48px;
+    }
+
+    /*-----Дарите заботу-----*/
+    .give-care__container{
+        width: 288px;
+        height: 292px;
+    }
+    .give-care__link{
+        width: 288px;
+        height: 192px;
+        background-position: 50%;
+    }
+    .give-care__text{
+        margin-top: 60px;
+        margin-left: 16px;
+        width: 253px;
+        height: 40px;
+    }
+    .box-blu{
+        position: absolute;
+        width: 190px;
+        height: 181px;
+        top: 42px;
+        left: 143px;
+    }
+    .box-yellow{
+        position: absolute;
+        width: 128px;
+        height: 166px;
+        top: 60px;
+        right: 109px;
+    }
+    .box-orange{
+        position: absolute;
+        width: 90px;
+        height: 136px;
+        top: 100px;
+        left: 242px;
+    }
+
+    /*-----8 видео сессий-----*/
+    .video-sessions__container{
+        overflow: hidden;
+        width: 286px;
+        height: 252px;
+    }
+    .eight-video-sessions{
+        width: 158px;
+        height: 32px;
+        margin: 16px
+    }
+    .description__video-sessions{
+        width: 254px;
+        height: 60px;
+    }
+    .prize-orange{
+        position: absolute;
+        width: 86px;
+        height: 82px;
+        left: 158px;
+        top: 123px;
+    }
+    .prize-blu{
+        position: absolute;
+        width: 105px;
+        height: 94px;
+        left: 181px;
+        top: 133px;
+    }
+
+    /*----------------FOOTER----------------*/
+    .footer__container{
+        margin-top: 60px;
+        padding-left: 11px;
+        padding-right: 16px;
+    }
+    .footer__first{
+        margin-right: 71px;
+    }
+    .subscribe__container{
+        width: 288px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .subscribe__email{
+        width: 288px;
+        height: 78px;
+    }
+    .input__email_container{
+        width: 288px;
+        height: 48px;
+    }
+    .input__email{
+        width: 200px;
+    }
+    .subscribe__btn{
+        display: none;
+    }
+    .social__network{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .underfooter{
+        flex-direction: column;
+        gap: 20px
+    }
+}
